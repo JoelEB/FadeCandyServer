@@ -31,6 +31,33 @@ Get your IP address from the Pi
 ifconfig
 ```
 
+###Important 
+
+By default the fadecandy server only listens on the local loopback (127.0.0.1:7890)
+To be able to reach the fadecandy server from another device on the network, you'll need alter or use a different config file.
+
+```
+{
+    "listen": [null, 7890],
+    "verbose": true,
+
+    "color": {
+        "gamma": 2.5,
+        "whitepoint": [1.0, 1.0, 1.0]
+    },
+
+    "devices": [
+        {
+            "type": "fadecandy",
+            "map": [
+                [ 0, 0, 0, 512 ]
+            ]
+        }
+    ]
+}
+```
+The null is the important part here, allowing whatever IP the Pi is given to be used as the server IP. 
+
 
 
 
