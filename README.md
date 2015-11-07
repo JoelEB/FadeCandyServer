@@ -1,6 +1,9 @@
 # FadeCandyServer
 Instructions on setting up the fadecandy server on a raspberry pi (any model)
 
+[FadeCandy GitHub](https://github.com/scanlime/fadecandy)
+
+[FadeCandy Server](https://github.com/scanlime/fadecandy/tree/master/server)
 
 Have freshly imaged pi with access to terminal.
 
@@ -58,6 +61,6 @@ To be able to reach the fadecandy server from another device on the network, you
 ```
 The null is the important part here, allowing whatever IP the Pi is given to be used as the server IP. 
 
-
+More information on Configuration Files can be found [here](https://github.com/scanlime/fadecandy/blob/master/doc/fc_server_config.md).
 
 
